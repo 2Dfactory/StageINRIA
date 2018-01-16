@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Defined_Sort_type Type="String"></Defined_Sort_type><Defined_Selector_type Type="String"></Defined_Selector_type>
+	<Defined_Constante_type Type="Integer"></Defined_Constante_type>
+	<Defined_Variable_type Type="String"></Defined_Variable_type><!--Here is the definition of the initial production (necessary to create the first root node of the tree)-->
+	<Production>
+		<Sort Name="Root"></Sort>
+		<Task>
+			<Sort Name="Bin"></Sort>
+			<Affectation>
+				<Selector Value="S1">
+					<Constante Value="Nil" Type="String"></Constante></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S2">
+					<Variable Value="x"></Variable></Selector></Contraction>
+		</Task></Production><!--Here is the definition of the first production (example)-->
+	<Production>
+		<Sort Name="Fork"></Sort><Profil>
+	<Sort Name="Bin"></Sort>
+	<Affectation>
+		<Selector Value="S2">
+			<Variable Value="x"></Variable></Selector></Affectation>
+	<Contraction>
+		<Selector Value="S1">
+			<Variable Value="y"></Variable></Selector></Contraction></Profil>
+		<Task>
+			<Sort Name="Bin"></Sort>
+			<Affectation>
+				<Selector Value="S1">
+					<Variable Value="z"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S2">
+					<Variable Value="y"></Variable></Selector></Contraction></Task>
+		<Task>
+			<Sort Name="Bin"></Sort>
+			<Affectation>
+				<Selector Value="S1">
+					<Variable Value="x"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S2">
+					<Variable Value="z"></Variable></Selector></Contraction></Task></Production><!--Here is the definition of the second production (example)-->
+	<Production>
+		<Sort Name="LeafA"></Sort>
+		<Profil>
+			<Sort Name="Bin"></Sort>
+			<Affectation>
+				<Selector Value="S2">
+					<Constructor Name="cons">
+						<Selector Value="S3">
+							<Variable Value="a"></Variable></Selector>
+						<Selector Value="S4">
+							<Variable Value="x"></Variable></Selector></Constructor></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S1">
+					<Variable Value="x"></Variable></Selector></Contraction></Profil>
+		<Task>
+			<Sort Name="Leaf"></Sort>
+			<Affectation></Affectation>
+			<Contraction>
+				<Selector Value="S3">
+					<Variable Value="a"></Variable>
+				</Selector></Contraction></Task></Production>
+</root>

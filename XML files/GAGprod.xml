@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Defined_Sort_type Type="String"></Defined_Sort_type><Defined_Selector_type Type="String"></Defined_Selector_type>
+	<Defined_Constante_type Type="Integer"></Defined_Constante_type>
+	<Defined_Variable_type Type="String"></Defined_Variable_type><!--Here is the definition of the initial production (necessary to create the first root node of the tree)-->
+	<Production>
+		<Sort Name="Root"></Sort>
+		<Task>
+			<Sort Name="Task1"></Sort>
+			<Affectation>
+				<Selector Value="S9">
+					<Constructor Name="cons3">
+						<Selector Value="S8">
+							<Constante Value="1" Type="Long"></Constante></Selector>
+						<Selector Value="S7">
+							<Constante Value="4" Type="Integer"></Constante></Selector></Constructor></Selector>
+				<Selector Value="S6">
+					<Constructor Name="cons2">
+						<Selector Value="S3">
+							<Constante Value="3" Type="Integer"></Constante></Selector>
+						<Selector Value="S4">
+							<Constructor Name="cons1">
+								<Selector Value="S1">
+									<Constante Value="1" Type="Integer"></Constante></Selector>
+								<Selector Value="S2">
+									<Constante Value="2" Type="Integer"></Constante></Selector></Constructor></Selector></Constructor></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S10">
+					<Variable Value="a"></Variable></Selector>
+				<Selector Value="S11">
+					<Variable Value="b"></Variable></Selector>
+				<Selector Value="S12">
+					<Variable Value="c"></Variable></Selector></Contraction>
+		</Task></Production><!--Here is the definition of the first production (example)-->
+	<Production>
+		<Sort Name="ProdTest1"></Sort><Profil>
+	<Sort Name="Task1"></Sort>
+	<Affectation>
+		<Selector Value="S10">
+			<Constructor Name="cons4">
+				<Selector Value="S14">
+					<Constante Value="4" Type="Integer"></Constante></Selector>
+				<Selector Value="S15">
+					<Variable Value="n"></Variable></Selector></Constructor></Selector>
+		<Selector Value="S11">
+			<Constructor Name="cons5">
+				<Selector Value="S16">
+					<Constante Value="5" Type="Integer"></Constante></Selector>
+				<Selector Value="S17">
+					<Variable Value="o"></Variable></Selector></Constructor></Selector>
+		<Selector Value="S12">
+			<Constructor Name="cons6">
+				<Selector Value="S19">
+					<Variable Value="p"></Variable></Selector>
+				<Selector Value="S18">
+					<Constante Value="6" Type="Integer"></Constante></Selector></Constructor></Selector></Affectation>
+	<Contraction>
+		<Selector Value="S9">
+			<Constructor Name="cons3">
+				<Selector Value="S8">
+					<Variable Value="m"></Variable></Selector>
+				<Selector Value="S7">
+					<Variable Value="l"></Variable>
+				</Selector></Constructor></Selector>
+		<Selector Value="S6">
+			<Constructor Name="cons2">
+				<Selector Value="S4">
+					<Variable Value="w"></Variable></Selector>
+				<Selector Value="S3">
+					<Variable Value="z"></Variable></Selector></Constructor></Selector></Contraction></Profil>
+		<Task>
+			<Sort Name="Task2"></Sort>
+			<Affectation>
+				<Selector Value="S21">
+					<Constructor Name="cons5">
+						<Selector Value="S16">
+							<Variable Value="h"></Variable></Selector>
+						<Selector Value="S17">
+							<Variable Value="j"></Variable></Selector></Constructor></Selector></Affectation>
+			<Contraction></Contraction></Task>
+		<Task>
+			<Sort Name="Task3"></Sort>
+			<Affectation>
+				<Selector Value="S22">
+					<Variable Value="e"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S23">
+					<Variable Value="f"></Variable></Selector></Contraction></Task></Production><!--Here is the definition of the second production (example)-->
+	<Production>
+		<Sort Name="ProdTest2"></Sort>
+		<Profil>
+			<Sort Name="Task2"></Sort>
+			<Affectation></Affectation>
+			<Contraction>
+				<Selector Value="S21">
+					<Variable Value="b"></Variable></Selector></Contraction></Profil></Production><!--Here is the definition of the third production (example)-->
+	<Production>
+		<Sort Name="ProdTest3"></Sort>
+		<Profil>
+			<Sort Name="Task3"></Sort>
+			<Affectation>
+				<Selector Value="S23">
+					<Variable Value="r"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S22">
+					<Variable Value="q"></Variable></Selector></Contraction></Profil>
+		<Task>
+			<Sort Name="Task4"></Sort>
+			<Affectation>
+				<Selector Value="S24">
+					<Variable Value="s"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S25">
+					<Variable Value="t"></Variable></Selector></Contraction></Task>
+		<Task>
+			<Sort Name="Task5"></Sort>
+			<Affectation>
+				<Selector Value="S26">
+					<Variable Value="u"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S27">
+					<Variable Value="v"></Variable></Selector></Contraction></Task>
+		<Task>
+			<Sort Name="Task6"></Sort>
+			<Affectation>
+				<Selector Value="S28">
+					<Variable Value="d"></Variable></Selector></Affectation>
+			<Contraction>
+				<Selector Value="S29">
+					<Variable Value="g"></Variable></Selector></Contraction></Task></Production>
+</root>

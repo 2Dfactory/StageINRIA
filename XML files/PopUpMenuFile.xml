@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This file contains all element for configuring the menu bar of the GAG software-->
+<MENUFILE><!--For adding a new menu to the menu file, add just a child element at the right position after the root element "MENUFILE"-->
+	<File><!--For adding an action element in a menu, add just a child element at the right position. You can also add a shortcut key by adding an attribute named "QuickKey" with the a value corresponding to the wanted key-->
+		<Open_file QuickKey="O"></Open_file>
+		<Save></Save>
+		<Save_as></Save_as></File>
+	<Edit >
+		<Editing>
+			<!--Annotating QuickKey="A"></Annotating-->
+			<!--Editing QuickKey="E"></Editing-->
+			<Picking QuickKey="P"></Picking>
+			<Transforming QuickKey="T"></Transforming></Editing>
+		<!--For adding a separator in the menu file, you must add a child element at the right position and name it "Separator"+a number-->
+		<Separator0></Separator0>
+		<Label_position>
+			<Auto></Auto>
+			<Center></Center>
+			<North></North>
+			<South></South>
+			<East></East>
+			<West></West>
+			<North_East></North_East>
+			<North_West></North_West>
+			<South_East></South_East>
+			<South_West></South_West></Label_position></Edit>		
+	<Help>
+		<Help></Help></Help></MENUFILE>
